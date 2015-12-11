@@ -1,6 +1,6 @@
 <?php
 
-namespace WebtownPHP\FineDiffBundle;
+namespace WebtownPHP\Bundle\FineDiffBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
