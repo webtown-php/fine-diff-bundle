@@ -3,3 +3,5 @@ services:
         class: WebtownPHP\Bundle\FineDiffBundle\Twig\Extension\DiffExtension
         arguments:
             - # from config: webtown_php_fine_diff.default_granularity
+        tags:
+            - { name: twig.extension }
