@@ -1,5 +1,7 @@
 {
   "name": "webtown-php/fine-diff-bundle",
+  "type": "symfony-bundle",
+  "version": "1.1",
   "description": "gorhill/PHP-FineDiff Symfony2 Bundle implementation",
   "keywords": [
     "diff",
@@ -9,7 +11,7 @@
   "license": "MIT",
   "require": {
     "php": ">=5.4",
-    "gorhill/php-fine-diff":    "dev-master",
+    "gorhill/php-fine-diff":    "~0.1.0",
     "symfony/finder":           "~2.3 || ~3.0",
     "symfony/filesystem":       "~2.3 || ~3.0",
     "symfony/options-resolver": "~2.3 || ~3.0",
@@ -20,14 +22,13 @@
     "phpunit/phpunit":          "~4.4"
   },
   "autoload": {
-    "psr-0": {
-      "WebtownPHP\\Bundle\\FineDiffBundle": ""
+    "psr-4": {
+      "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
     }
   },
-  "target-dir": "WebtownPHP/Bundle/FineDiffBundle",
   "extra": {
     "branch-alias": {
-      "dev-develop": "0.1-dev"
+      "dev-master": "1.1-dev"
     }
   }
 }
