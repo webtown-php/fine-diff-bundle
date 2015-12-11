@@ -1,7 +1,6 @@
 {
   "name": "webtown-php/fine-diff-bundle",
   "type": "symfony-bundle",
-  "version": "1.3",
   "description": "gorhill/PHP-FineDiff Symfony2 Bundle implementation",
   "keywords": [
     "diff",
@@ -28,7 +27,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.1-dev"
+      "dev-master": "1.4-dev"
     }
   }
 }
