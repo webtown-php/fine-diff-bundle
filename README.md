@@ -19,7 +19,7 @@ Or add with hand to composer.json:
 
 ```json
     "require": {
-        "webtown-php/fine-diff-bundle": "~1.2"
+        "webtown-php/fine-diff-bundle": "~1.3"
     }
 ```
 
