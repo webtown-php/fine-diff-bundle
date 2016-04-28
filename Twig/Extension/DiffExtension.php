@@ -53,7 +53,7 @@ class DiffExtension extends \Twig_Extension
         $old = strip_tags($old);
         $new = strip_tags($new);
 
-        foreach ($filters as $filter => $args) {
+        foreach ($filters as $filter) {
             $old = call_user_func_array($filter, [$old]);
             $new = call_user_func_array($filter, [$new]);
         }
