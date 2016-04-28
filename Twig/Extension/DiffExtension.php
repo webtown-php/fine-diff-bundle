@@ -40,10 +40,23 @@ class DiffExtension extends \Twig_Extension
         return $html;
     }
 
-    public function getHtmlTextDiff($old, $new, $granularity = null)
+    /**
+     * @param $old
+     * @param $new
+     * @param null $granularity
+     * @param array $filters    Eg: ['html_entity_decode'] If the data comes from CKEditor, there are some encoded
+     *                          strings: &lt; But we want to see the original character: `<`
+     * @return mixed
+     */
+    public function getHtmlTextDiff($old, $new, $granularity = null, $filters = [])
     {
         $old = strip_tags($old);
         $new = strip_tags($new);
+
+        foreach ($filters as $filter => $args) {
+            $old = call_user_func_array($filter, [$old]);
+            $new = call_user_func_array($filter, [$new]);
+        }
 
         return $this->getDiff($old, $new, $granularity);
     }
