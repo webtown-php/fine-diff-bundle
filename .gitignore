@@ -3,18 +3,3 @@ vendor
 composer.phar
 composer.lock
 phpunit.xml
-
-# Intellij and PHPStorm
-.idea
-*.iml
-out
-gen
-
-# Netbeans
-nbproject
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-.nb-gradle/
